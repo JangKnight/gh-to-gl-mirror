@@ -24,7 +24,7 @@ jobs:
           set -euo pipefail
           : "${GL_PAT:?GL_PAT is required}"
 
-          GL_NAMESPACE="AnthonySJHenry"
+          GL_NAMESPACE="JangKnight"
           REPO_NAME="${GITHUB_REPOSITORY##*/}"
           git remote remove gitlab 2>/dev/null || true
           git remote add gitlab "https://oauth2:${GL_PAT}@gitlab.com/${GL_NAMESPACE}/${REPO_NAME}.git"
